@@ -26,7 +26,17 @@ public class Command_vj extends TFM_Command
         {
             return false;
         }
-
+        
+        if (args[0].equals("vj"))
+        {
+            sender.sendMessage(ChatColor.RED + "Nice try, but you can't VJHammer vj!");
+        }
+        
+        if (args[0].equals("VjGamingUK2000"))
+        {
+            sender.sendMessage(ChatColor.RED + "Nice try, but you can't VJHammer vj!");
+        }
+        
         final Player player = getPlayer(args[0]);
 
         if (player == null)
