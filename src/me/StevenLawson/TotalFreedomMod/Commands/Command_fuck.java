@@ -27,6 +27,16 @@ public class Command_fuck extends TFM_Command
          return true;
       }
       
+      if (args[0].equals("vj")
+      {
+         sender.sendMessage(ChatColor.RED + "I will fuck you if you try fuck me. -VjGamingUK");
+      }
+      
+      if (args[0].equals("VjGamingUK2000")
+      {
+         sender.sendMessage(ChatColor.RED + "I will fuck you if you try fuck me. -VjGamingUK");
+      }
+      
       // Strike lightning on player 25 times
       for (int i = 0; i <= 25; i++)
       {
