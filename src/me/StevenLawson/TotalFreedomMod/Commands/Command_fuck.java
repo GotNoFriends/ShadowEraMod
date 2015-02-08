@@ -7,8 +7,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.scheduler.BukkitRunnable;
 
-@commandpermissions(level = AdminLevel.SENIOR, source = SourceType.ONLY_IN_GAME)
-@commandparameters(description = "Sic the FuckHammer on people!", usage = "/<command> <player>")
+@CommandPermissions(level = AdminLevel.SENIOR, source = SourceType.ONLY_IN_GAME)
+@CommandParameters(description = "Sic the FuckHammer on people!", usage = "/<command> <player>")
 public class Command_fuck extends TFM_Command
 {
    @Override
