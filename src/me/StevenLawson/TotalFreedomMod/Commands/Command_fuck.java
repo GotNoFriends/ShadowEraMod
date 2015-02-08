@@ -27,12 +27,12 @@ public class Command_fuck extends TFM_Command
          return true;
       }
       
-      if (args[0].equals("vj")
+      if (args[0].equals("vj"))
       {
          sender.sendMessage(ChatColor.RED + "I wouldn't do that");
       }
       
-      if (args[0].equals("VjGamingUK2000")
+      if (args[0].equals("VjGamingUK2000"))
       {
          sender.sendMessage(ChatColor.RED + "I wouldn't do that");
       }
