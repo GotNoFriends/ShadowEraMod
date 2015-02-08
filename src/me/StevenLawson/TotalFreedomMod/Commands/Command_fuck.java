@@ -8,7 +8,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.scheduler.BukkitRunnable;
 
 @commandpermissions(level = AdminLevel.SENIOR, source = SourceType.ONLY_IN_GAME)
-@commandparameters(description = "Fuck someone!", usage = "/<command> <player>")
+@commandparameters(description = "Sic the FuckHammer on people!", usage = "/<command> <player>")
 public class Command_fuck extends TFM_Command
 {
    @Override
@@ -29,12 +29,12 @@ public class Command_fuck extends TFM_Command
       
       if (args[0].equals("vj")
       {
-         sender.sendMessage(ChatColor.RED + "I will fuck you if you try fuck me. -VjGamingUK");
+         sender.sendMessage(ChatColor.RED + "I wouldn't do that");
       }
       
       if (args[0].equals("VjGamingUK2000")
       {
-         sender.sendMessage(ChatColor.RED + "I will fuck you if you try fuck me. -VjGamingUK");
+         sender.sendMessage(ChatColor.RED + "I wouldn't do that");
       }
       
       // Strike lightning on player 25 times
