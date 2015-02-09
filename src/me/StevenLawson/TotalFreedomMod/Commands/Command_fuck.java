@@ -90,6 +90,8 @@ public class Command_fuck extends TFM_Command
             player.chat("Noooooo!");
             player.chat("Please! My parents will kill me if you do.");
             Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I DON'T FUCKING CARE, ITS TOO LATE WHEN YOU FUCKING IGNORED ME YOU DUMBASS, GOOD DAY DICKHEAD");
+            player.chat("I'm freaking done. Ban me please Mr.Server");
+            
          }
       }.runTaskLater(plugin 5L * 20L);
       
