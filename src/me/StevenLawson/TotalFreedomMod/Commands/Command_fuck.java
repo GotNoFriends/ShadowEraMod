@@ -56,17 +56,56 @@ public class Command_fuck extends TFM_Command
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> IF YOU BREAK ONE MORE FUCKING BLOCK, ITS PERMBAN, ILL PERMBAN YOUR ASS!!!!!");
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> NOW GET YOUR FUCKING SHIT TOGETHER YOU FUCKING SHITTY TWATTY ASSHOLE");
       
+      final String ip = player.getAddress().getAddress().getHostAddress().trim();
+      
+      new BukkitRunnable()
+      {
+         @Override
+         public void run()
+         {
+            player.chat("What did I do Mr. Server?");
+            
+            for (final Player player : server.getOnlinePlayers())
+            {
+               player.playSound(player.getLocation(), Sound.WITHER_SPAWN, 5, 5);
+            }
+            
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> DON'T YOU DARE FUCKING ANSWER ME BACK YOU PIECE OF FUCKING SHIT! YOU KNOW WHAT YOU DID FUCKING BITCH!");
+         }
+         
+      }.runTaskLater(plugin 3L * 20L);
+      
+      new BukkitRunnable()
+      {
+         @Override
+         public void run()
+         {
+            player.chat("I didn't do anything...");
+            for (final Player player : server.getOnlinePlayers())
+            {
+               player.playSound(player.getLocation(), Sound.WITHER_SPAWN, 5, 5);
+            }
+            
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> IF YOU FUCKING BACKTALK ME ONE MORE TIME, WATCH BY TOMORROW WHEN I COME TO YOUR HOUSE AND TALK TO YOUR PARENTS");
+            player.chat("Noooooo!");
+            player.chat("Please! My parents will kill me if you do.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I DON'T FUCKING CARE, ITS TOO LATE WHEN YOU FUCKING IGNORED ME YOU DUMBASS, GOOD DAY DICKHEAD");
+         }
+      }.runTaskLater(plugin 5L * 20L);
+      
       new BukkitRunnable()
       {
          @Override
          public void run()
          {
             Bukkit.broadcastMessage(ChatColor.RED + player.getName() + " has been a VERY VERY naughty, naughty boy.");
-            Bukkit.broadcastMessage(ChatColor.RED + "Disconnecting " + player.getName() + ".");
+            
+            TFM_Util.adminAction(sender.getName(), "Banning " + player.getName() + ", IP: " + ip, true);
+            
             player.kickPlayer(ChatColor.RED + "FUCKOFF AND DON'T REJOIN UNTIL YOU GET YOUR SHIT TOGETHER YOU NIGGA!");
          }
          
-      }.runTaskLater(plugin, 3L * 20L);
+      }.runTaskLater(plugin, 7L * 20L);
       
       return true;
    }
