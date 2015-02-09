@@ -1,5 +1,6 @@
 package me.StevenLawson.TotalFreedomMod.Commands;
 
+import java.util.Arrays;
 import me.StevenLawson.TotalFreedomMod.TFM_AdminList;
 import me.StevenLawson.TotalFreedomMod.TFM_Ban;
 import me.StevenLawson.TotalFreedomMod.TFM_BanManager;
@@ -8,14 +9,17 @@ import me.StevenLawson.TotalFreedomMod.TFM_Util;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Sound;
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 @CommandPermissions(level = AdminLevel.SENIOR, source = SourceType.BOTH, blockHostConsole = true)
-@CommandParameters(description = "Slam the VJHammer over someone.", usage = "/<command> <playername>")
+@CommandParameters(description = "Slam the VJHammer over someone or use the Purple Lord's powerz!.", usage = "/<command> [<playername> | psl")
 public class Command_vj extends TFM_Command
 {
     @Override
@@ -27,14 +31,35 @@ public class Command_vj extends TFM_Command
             return false;
         }
         
-        if (args[0].equals("vj"))
+        if (args[0].equals("psl"))
         {
-            sender.sendMessage(ChatColor.RED + "Nice try, but you can't VJHammer vj!");
-        }
-        
-        if (args[0].equals("VjGamingUK2000"))
-        {
-            sender.sendMessage(ChatColor.RED + "Nice try, but you can't VJHammer vj!");
+            TFM_Util.bcastMsg(ChatColor.AQUA + sender.getName() + " - Gracing the world of purple!");
+            TFM_Util.bcastMsg(ChatColor.DARK_PURPLE + "Behold! The purple overlord, VjGamingUK2000, is here!");
+            
+            for (Player player : server.getOnlinePlayers())
+            {
+                ItemStack purpleHat = new ItemStack(Material.WOOL, 1, (short) 10);
+                ItemMeta itemmeta = purpleHat.getItemMeta();
+                itemmeta.setDisplayName(ChatColor.DARK_PURPLE + "The Purple Hat");
+                itemmeta.setLore(Arrays.asList(ChatColor.DARK_PURPLE + "Welcome to VjGamingUK2000's team of purple!"));
+                purpleHat.setItemMeta(itemmeta);
+                
+                ItemStack purpleItem = new ItemStack(Material.WOOL, 1, (short) 10);
+                ItemMeta item = purpleItem.getItemMeta();
+                item.setDisplayName(ChatColor.DARK_PURPLE + "The Purple Aura");
+                item.setLore(Arrays.asList("§5§oThe Purple Lord's powers thou shall protects you!"));
+                purpleItem.setItemMeta(item);        
+                
+                player.setHealth(20.0);
+                player.getWorld().strikeLightning(player.getLocation());
+                player.setFireTicks(10000);
+                player.setHealth(20.0);
+                player.getInventory().setHelmet(purpleHat);
+                player.getInventory().addItem(purpleItem);
+                
+            }
+            
+            return true;
         }
         
         final Player player = getPlayer(args[0]);
