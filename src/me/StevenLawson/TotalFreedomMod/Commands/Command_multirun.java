@@ -10,7 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 @CommandPermissions(level = AdminLevel.SENIOR, source = SourceType.BOTH)
-@CommandParameters(description = "Run a command <amount> times.", usage = "/<command> <times> <outcommand>")
+@CommandParameters(description = "Run a command <amount> times.", usage = "/<command> <times> [outcommand] [args]")
 public class Command_multirun extends TFM_Command
 {
     @Override
@@ -29,6 +29,12 @@ public class Command_multirun extends TFM_Command
         if (args[1].equals("multirun"))
         {
             playerMsg("You can't multirun a multirun!", ChatColor.RED);
+            return true;
+        }
+        
+        if (args[0] > 5000)
+        {
+            sender.sendMessage(ChatColor.RED + "Are you mad? You would crash the server if you ran the command " + args[0] + " times");
             return true;
         }
         
