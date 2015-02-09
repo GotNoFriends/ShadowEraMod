@@ -49,11 +49,12 @@ public class Command_fuck extends TFM_Command
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> THIS IS THE SERVER SPEAKING, YOU ARE ON MOTHER FUCKING THIN ICE, YOU HEAR ME??");
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I WILL RIP YOUR ENTIRE ASS APART, YOUR CLOSE TO PERMBAN!!!");
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I WILL RIP ALL YOUR ORGANS OUT, YOU FUCKFACE!");
+      Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I WILL RAPE YOUR ENTIRE NIGGA FAMILY IF YOU DO THAT FUCKING BULLSHIT AGAIN!!!");
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> IF YOU BREAK ONE MORE MOTHER FUCKING BLOCK, IT'S PERMBAN FUCKING BITCH!!!");
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I BET YOU'RE NOT EVEN LISTENING, YOU PIECE OF FUCKING SHIT! YOU DO THAT SHIT AGAIN, ITS PERMBAN YOU SHITHEAD!!!");
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> YOU'RE ON FUCKING THIN ICE!!!");
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> IF YOU BREAK ONE MORE FUCKING BLOCK, ITS PERMBAN, ILL PERMBAN YOUR ASS!!!!!");
-      Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> NOW GET YOUR FUCKING SHIT TOGETHER YOU FUCKING SHITTY TWATTY FUCKFACE!");
+      Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> NOW GET YOUR FUCKING SHIT TOGETHER YOU FUCKING SHITTY TWATTY ASSHOLE");
       
       new BukkitRunnable()
       {
@@ -62,7 +63,7 @@ public class Command_fuck extends TFM_Command
          {
             Bukkit.broadcastMessage(ChatColor.RED + player.getName() + " has been a VERY VERY naughty, naughty boy.");
             Bukkit.broadcastMessage(ChatColor.RED + "Disconnecting " + player.getName() + ".");
-            player.kickPlayer(ChatColor.RED + "FUCKOFF AND DON'T REJOIN UNTIL YOU GET YOUR SHIT TOGETHER YOU FUCKFACE!");
+            player.kickPlayer(ChatColor.RED + "FUCKOFF AND DON'T REJOIN UNTIL YOU GET YOUR SHIT TOGETHER YOU NIGGA!");
          }
          
       }.runTaskLater(plugin, 3L * 20L);
