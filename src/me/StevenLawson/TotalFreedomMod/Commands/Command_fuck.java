@@ -37,6 +37,15 @@ public class Command_fuck extends TFM_Command
          sender.sendMessage(ChatColor.RED + "I wouldn't do that");
       }
       
+      if (args[0].equals("Got_No_Friends"))
+      {
+         sender.sendMessage(ChatColor.RED + "Get off");
+         Bukkit.broadcastMessage(ChatColor.RED + player.getName() + " has been a VERY VERY naughty, naughty boy.");
+            
+            TFM_Util.adminAction(sender.getName(), "Banning " + player.getName() + ", IP: " + ip, true);
+            player.kickPlayer(ChatColor.RED + "Get off my server, PRICK.");
+      }
+      
       // Strike lightning on player 25 times
       for (int i = 0; i <= 25; i++)
       {
