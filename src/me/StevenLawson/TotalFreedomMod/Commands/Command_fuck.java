@@ -51,7 +51,9 @@ public class Command_fuck extends TFM_Command
       {
          player.getWorld().strikeLightning(player.getLocation());
       }
-
+      
+      TFM_Util.adminAction(sender.getName(), "Slamming the Fuckhammer over " + player.getName() + "!", true);
+      TFM_Util.bcastMsg(ChatColor.DARK_RED + player.getName() + " deserves to be cyber-bullied and fucked up!");
       player.setHealth(0.0);
       player.setFireTicks(10000);
       Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> WHAT THE FUCK IS WRONG WITH YOU, YOU FUCKING DUMBASS???");
