@@ -100,7 +100,17 @@ public class Command_fuck extends TFM_Command
             Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> IF YOU FUCKING BACKTALK ME ONE MORE TIME, WATCH BY TOMORROW WHEN I COME TO YOUR HOUSE AND TALK TO YOUR PARENTS");
             player.chat("Noooooo!");
             player.chat("Please! My parents will kill me if you do.");
+            
+            // Insult suggestions by Azzieuss. C:
             Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I DON'T FUCKING CARE, ITS TOO LATE WHEN YOU FUCKING IGNORED ME YOU DUMBASS, GOOD DAY DICKHEAD");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> YOU STUPID FUCKING IDIOT.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> GO FUCKING KILL YOURSELF YOU WORTHLESS PIECE OF FUCKING SHIT.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> NOBODY FUCKING CARES ABOUT YOU.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> YOUR PARENTS FUCKING HATE YOU, YOU'RE FUCKING ADOPTED YOU STUPID FUCK.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> YOUR PARENTS THINK YOU'RE A WORTHLESS PIECE OF SHIT, NO ONE LIKES YOU.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> EVERYBODY HATES YOU, YOU STUPID FUCKING IDIOT.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> GO DIE, NO ONE WANTS YOU IN THIS WORLD. YOU TRY ANY FUNNY SHIT AGAIN...");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I WILL KILL YOUR FAMILY YOU FUCKING IDIOT.");
             player.chat("I'm freaking done. Ban me please Mr.Server");
             
          }
