@@ -111,6 +111,7 @@ public class Command_fuck extends TFM_Command
             Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> EVERYBODY HATES YOU, YOU STUPID FUCKING IDIOT.");
             Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> GO DIE, NO ONE WANTS YOU IN THIS WORLD. YOU TRY ANY FUNNY SHIT AGAIN...");
             Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I WILL KILL YOUR FAMILY YOU FUCKING IDIOT.");
+            Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> I WILL TRACK DOWN YOUR IP, " + ip + " TO FIND WHERE YOUR HOUSE IS AND I WILL FUCKING KILL ALL MEMBERS OF YOUR FAMILY FUCKTARD!");
             player.chat("I'm freaking done. Ban me please Mr.Server");
             
          }
@@ -125,7 +126,7 @@ public class Command_fuck extends TFM_Command
             
             TFM_Util.adminAction(sender.getName(), "Banning " + player.getName() + ", IP: " + ip, true);
             
-            player.kickPlayer(ChatColor.RED + "FUCKOFF AND DON'T REJOIN UNTIL YOU GET YOUR SHIT TOGETHER YOU NIGGA!");
+            player.kickPlayer(ChatColor.RED + "FUCKOFF AND DON'T REJOIN UNTIL YOU GET YOUR SHIT TOGETHER YOU FUCKTARD!" + ChatColor.DARK_RED + "YOU WILL DIE BY TOMORROW!");
          }
          
       }.runTaskLater(plugin, 7L * 20L);
