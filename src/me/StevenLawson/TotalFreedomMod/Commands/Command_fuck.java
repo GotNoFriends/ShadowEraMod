@@ -23,7 +23,7 @@ public class Command_fuck extends TFM_Command
       
       if (player == null)
       {
-         playerMsg(TotalFreedomMod.PLAYER_NOT_FOUND, ChatColor.RED);
+         playerMsg(TFM_Command.PLAYER_NOT_FOUND, ChatColor.RED);
          return true;
       }
       
@@ -84,7 +84,7 @@ public class Command_fuck extends TFM_Command
             Bukkit.broadcastMessage("<" + ChatColor.RED + "Server" + ChatColor.WHITE + "> DON'T YOU DARE FUCKING ANSWER ME BACK YOU PIECE OF FUCKING SHIT! YOU KNOW WHAT YOU DID FUCKING BITCH!");
          }
          
-      }.runTaskLater(plugin 3L * 20L);
+      }.runTaskLater(plugin, 3L * 20L);
       
       new BukkitRunnable()
       {
@@ -115,7 +115,7 @@ public class Command_fuck extends TFM_Command
             player.chat("I'm freaking done. Ban me please Mr.Server");
             
          }
-      }.runTaskLater(plugin 5L * 20L);
+      }.runTaskLater(plugin, 5L * 20L);
       
       new BukkitRunnable()
       {
